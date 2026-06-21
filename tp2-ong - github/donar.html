@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Huella Argentina</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" href="src/paw-print.png" type="image/x-icon">
+  <style>
+    /* =========================
+           OVERLAY
+        ========================== */
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+
+            background: rgba(0, 0, 0, .6);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            display: none;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        /* =========================
+           MODAL
+        ========================== */
+
+        .modal {
+            background: white;
+
+            width: 450px;
+            max-width: 90%;
+            margin-top: 7%;
+            padding: 2rem;
+
+            border-radius: 15px;
+
+            position: relative;
+
+        }
+
+        .modal h2 {
+            margin-bottom: 1rem;
+            color: #198754;
+        }
+
+        .modal p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* =========================
+           BOTÓN CERRAR
+        ========================== */
+
+        .close-btn {
+            position: absolute;
+
+            top: 15px;
+            right: 15px;
+
+            width: 35px;
+            height: 35px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: #eeeeee;
+
+            font-size: 1rem;
+        }
+
+        /* =========================
+           FORMULARIO
+        ========================== */
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: .5rem;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+
+            padding: .8rem;
+
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+        }
+
+        .submit-btn {
+            width: 100%;
+
+            border: none;
+            border-radius: 8px;
+
+            background: #198754;
+            color: white;
+
+            padding: 1rem;
+
+            font-size: 1rem;
+        }
+
+        .submit-btn:hover {
+            background: #157347;
+        }
+
+        select {
+            width: 100%;
+
+            padding: 0.8rem;
+
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+        }
+
+        .descripcion-monto {
+            margin-top: 0.75rem;
+            margin-bottom: 0;
+            color: #157347;
+            font-weight: bold;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+  </style>
+</head>
+<body>
+  <nav id="envoltorio-nav">
+    <ul id="menu-navegacion">
+      <li><a href="index.html"><picture><img src="src/logo.png" alt="Logo Huella Argentina"></picture></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="index.html#casos">Casos</a></li>
+      <li><a href="index.html#adoptar">Adoptar</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+      <!-- El botón de donar se destaca con una clase especial -->
+      <li class="nav-boton"><a href="donar.html">Salvá huellas ahora</a></li>
+    </ul>
+  </nav>
+
+  <section id="donar">
+    <div class="interior-seccion">
+      <div class="donar-centrado">
+        <span class="etiqueta-seccion">Hacé la diferencia</span>
+        <h2 class="titulo-seccion">Tu donación cambia una vida</h2>
+        <p class="subtitulo-seccion">Con transparencia total: cada peso que donás tiene un destino concreto.</p>
+      </div>
+
+      <div class="flex-uso">
+        <div class="item-uso">
+          <div class="icono-uso">🏥</div>
+          <p>Atención veterinaria y cirugías de emergencia</p>
+        </div>
+        <div class="item-uso">
+          <div class="icono-uso">🍖</div>
+          <p>Alimento y cuidado hasta la adopción</p>
+        </div>
+        <div class="item-uso">
+          <div class="icono-uso">✂️</div>
+          <p>Campañas gratuitas de castración y vacunación</p>
+        </div>
+      </div>
+
+      <div class="flex-donar">
+        <div class="tarjeta-donar">
+          <div class="monto-donar">$2.000</div>
+          <h3>Unos mimos</h3>
+          <p>Cubre una sesión de vacunación para un cachorro recién rescatado.</p>
+        </div>
+        <div class="tarjeta-donar popular">
+          <div class="etiqueta-popular">Más elegido</div>
+          <div class="monto-donar">$5.000</div>
+          <h3>Un mes de vida</h3>
+          <p>Alimenta a un animal durante 30 días mientras espera su familia adoptante.</p>
+        </div>
+        <div class="tarjeta-donar">
+          <div class="monto-donar">$15.000</div>
+          <h3>Una segunda oportunidad</h3>
+          <p>Financia la castración completa de un animal.</p>
+        </div>
+        <div class="tarjeta-donar">
+          <div class="monto-donar">$50.000</div>
+          <h3>Una nueva vida</h3>
+          <p>Cubre una cirugía de emergencia para un animal accidentado o enfermo.</p>
+        </div>
+      </div>
+
+      <div class="llamado-donar">
+        <button onclick="openModal()" class="boton-donar">Donar ahora</button>
+        <p class="nota-transparencia">🔒 100% seguro — publicamos mensualmente en nuestro Instagram en qué se usan los fondos recaudados</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html#portada">
+      <picture><img src="src/logo.png" alt="Logo Huella Argentina" width="100px"></picture>
+    </a>
+    <p style="font-size: 1.3rem;"><strong>Fundación Huella Argentina</strong></p>
+    <p style="margin-top: 6px;">Huellas que transforman vidas · Organización No Gubernamental</p>
+    <ul class="links-footer">
+      <li><a href="index.html#portada">Home</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="index.html#casos">Casos</a></li>
+      <li><a href="index.html#adoptar">Adoptar</a></li>
+      <li><a href="#donar">Donar</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+    <p style="margin-top: 14px; font-size: 0.78rem;">© 2026 Fundación Huella Argentina · Hecho con ❤️ por Felipe Larrañaga</p>
+  </footer>
+
+    <script src="modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Huella Argentina</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" href="src/paw-print.png" type="image/x-icon">
+</head>
+<body>
+<nav id="envoltorio-nav">
+  <ul id="menu-navegacion">
+    <li><a href="#portada"><picture><img src="src/logo.png" alt="Logo Huella Argentina"></picture></a></li>
+    <li><a href="#portada">Home</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#casos">Casos</a></li>
+    <li><a href="#adoptar">Adoptar</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <!-- Botón a la landing page para donar -->
+    <li class="nav-boton"><a href="donar.html">Salvá huellas ahora</a></li>
+  </ul>
+</nav>
+
+<section id="portada">
+  <div id="fondo-portada">
+    <video autoplay muted loop 
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+      <source src="src/perro_gato.mp4" type="video/mp4">
+    </video>
+    <div id="capa-oscura"></div>
+  </div>
+    
+  <div id="contenido-portada">
+    <h1><span class="celeste">Fundación</span> Huella <span class="celeste">Argentina</span></h1>
+    <span class="etiqueta-previa">🐾 Cada huella merece una segunda oportunidad 🐾</span>
+    <p>Rescatamos, cuidamos y damos en adopción responsable a perros y gatos en situación de calle en todo el país.</p>
+    <!-- Botón a la landing page para donar -->
+    <a href="donar.html" class="boton-portada">Salvá huellas ahora</a>
+  </div>
+</section>
+ 
+<section id="nosotros">
+  <div class="interior-seccion">
+    <div class="flex-nosotros">
+      <div class="columna-img-nosotros">
+        <picture><img src="src/cat_dog.webp" alt="Un perro y un gato conviviendo en paz"></picture>
+        <div class="medalla-nosotros">
+          <span class="texto-grande">2018</span>
+          <span class="texto-chico">Fundamos Huella</span>
+        </div>
+      </div>
+      <div class="columna-texto-nosotros">
+        <span class="etiqueta-seccion">¿Quiénes somos?</span>
+        <h2 class="titulo-seccion">Huellas que transforman vidas</h2>
+        <p class="intro-nosotros">
+          <b>Fundación Huella Argentina</b> rescata animales abandonados y los conecta con familias responsables, sacando huellas de la calle en todo el país.<br><br>
+          Hoy más de <b>6 millones</b> de perros y gatos viven en situación de calle en Argentina, producto de la tenencia irresponsable y la falta de políticas de castración. Cada animal que rescatamos es una vida que cambia para siempre.
+        </p>
+        <div class="tarjeta-mision-vision">
+          <h4>Misión</h4>
+          <p>Rescatar, cuidar y dar en adopción responsable a perros y gatos en situación de calle, acompañando a las familias y promoviendo la tenencia responsable en toda la comunidad.</p>
+        </div>
+        <div class="tarjeta-mision-vision">
+          <h4>Visión</h4>
+          <p>Una Argentina donde ningún animal tenga que vivir o morir en la calle, donde cada familia adopte con conciencia y la sociedad trabaje junta por el bienestar animal.</p>
+        </div>
+        <div class="lista-valores">
+          <span class="etiqueta-valor">🌿 Transparencia</span>
+          <span class="etiqueta-valor">❤️ Amor por los animales</span>
+          <span class="etiqueta-valor">🔥 Pasión</span>
+          <span class="etiqueta-valor">🤝 Caridad</span>
+          <span class="etiqueta-valor">✅ Responsabilidad</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="casos">
+  <div class="interior-seccion">
+    <span class="etiqueta-seccion">Historias reales</span>
+    <h2 class="titulo-seccion">Huellas salvadas</h2>
+    <p class="subtitulo-seccion">Animales que ya encontraron hogar gracias a tu apoyo. Cada uno tiene nombre e historia.</p>
+
+    <div class="flex-casos">
+      <div class="tarjeta-caso">
+        <picture><img src="src/toro-y-canela.webp" alt="Perros rescatados en clínica"></picture>
+        <div class="cuerpo-caso">
+          <span class="estado-caso estado-salvado">Adoptados ✓</span>
+          <h3>Toro y Canela</h3>
+          <p>Rescatados en Villa Lugano en condición crítica, pasaron 3 meses en nuestra clínica. Hoy viven juntos en Palermo con la familia Rodríguez.</p>
+          <a href="torocanela.html" class="boton-chico boton-borde">Ver historia</a>
+        </div>
+      </div>
+      <div class="tarjeta-caso">
+        <picture><img src="src/coco_zuri.png" alt="Gato rescatado"></picture>
+        <div class="cuerpo-caso">
+          <span class="estado-caso estado-salvado">Adoptados ✓</span>
+          <h3>Coco y Zuri</h3>
+          <p>Encontrados en una obra en construcción, esta dupla inseparable fue adoptada por una familia en Villa Devoto (CABA) que no podía elegir solo uno.</p>
+          <a href="cocozuri.html" class="boton-chico boton-borde">Ver historia</a>
+        </div>
+      </div>
+      <div class="tarjeta-caso">
+        <picture><img src="src/jaulas-clinica.webp" alt="Animales en clínica"></picture>
+        <div class="cuerpo-caso">
+          <span class="estado-caso estado-salvado">Rescatados y con vacantes ✓</span>
+          <h3>Pacientes de enero</h3>
+          <p>En enero rescatamos 12 animales en una sola semana. Todos recibieron atención completa. 10 de ellos ya tienen familia.</p>
+          <a href="enero.html" class="boton-chico boton-borde">Ver historia</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="subtitulo-casos">Casos urgentes 🚨</h3>
+    <div class="flex-casos">
+      <div class="tarjeta-caso">
+        <picture><img src="src/perros-callejeros.webp" alt="Cachorros en situación de calle"></picture>
+        <div class="cuerpo-caso">
+          <span class="estado-caso estado-urgente">Urgente 🚨</span>
+          <h3>Cachorros de Bajo Flores</h3>
+          <p>Mamá y 4 cachorros encontrados en la calle. Necesitan vacunas, desparasitación y alimento por 2 meses.</p>
+          <div class="datos-progreso">
+            <span>$84.000 recaudados</span>
+            <span>58%</span>
+          </div>
+          <div class="barra-progreso">
+            <div class="relleno-progreso" style="width: 58%;"></div>
+          </div>
+          <a href="#donar" class="boton-chico">Ayudar ahora</a>
+        </div>
+      </div>
+      <div class="tarjeta-caso">
+        <picture><img src="src/perra-negra.avif" alt="Negra, perra atropellada"></picture>
+        <div class="cuerpo-caso">
+          <span class="estado-caso estado-urgente">Urgente 🚨</span>
+          <h3>Negra – Cirugía de cadera</h3>
+          <p>Negra fue atropellada en Quilmes. Necesita cirugía ortopédica urgente. Los fondos cubren la operación y recuperación.</p>
+          <div class="datos-progreso">
+            <span>$243.000 recaudados</span>
+            <span>91%</span>
+          </div>
+          <div class="barra-progreso">
+            <div class="relleno-progreso" style="width: 91%;"></div>
+          </div>
+          <a href="#donar" class="boton-chico">Ayudar a Negra</a>
+        </div>
+      </div>
+      <div class="tarjeta-caso">
+        <picture><img src="src/colonia-felina.webp" alt="Gatos de Rosario"></picture>
+        <div class="cuerpo-caso">
+          <span class="estado-caso estado-urgente">Urgente 🚨</span>
+          <h3>Colonia de gatos – Rosario</h3>
+          <p>25 gatos de una colonia en Rosario necesitan castración masiva para frenar la reproducción.</p>
+          <div class="datos-progreso">
+            <span>$82.000 recaudados</span>
+            <span>22%</span>
+          </div>
+          <div class="barra-progreso">
+            <div class="relleno-progreso" style="width: 22%;"></div>
+          </div>
+          <a href="#donar" class="boton-chico">Ayudar a la colonia</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="adoptar">
+  <div class="interior-seccion">
+    <span class="etiqueta-seccion">¿Querés adoptar?</span>
+    <h2 class="titulo-seccion">Adoptá con conciencia y amor</h2>
+    <p class="subtitulo-seccion">Adoptar es un compromiso para toda la vida del animal. Te acompañamos en cada paso.</p>
+
+    <div class="flex-adoptar">
+      <div class="columna-adoptar">
+        <div class="item-paso">
+          <div class="numero-paso">1</div>
+          <div>
+            <h4>Completá el formulario</h4>
+            <p>Contanos sobre tu hogar, estilo de vida y qué tipo de animal buscás.</p>
+          </div>
+        </div>
+        <div class="item-paso">
+          <div class="numero-paso">2</div>
+          <div>
+            <h4>Entrevista con el equipo</h4>
+            <p>Un voluntario coordinará un encuentro para hacer el match perfecto.</p>
+          </div>
+        </div>
+        <div class="item-paso">
+          <div class="numero-paso">3</div>
+          <div>
+            <h4>Visita al animal</h4>
+            <p>Conocé al animal en persona para asegurarte de que sea el indicado.</p>
+          </div>
+        </div>
+        <div class="item-paso">
+          <div class="numero-paso">4</div>
+          <div>
+            <h4>Firma del compromiso</h4>
+            <p>Formalizamos la adopción con un acuerdo que protege al animal.</p>
+          </div>
+        </div>
+        <div class="item-paso">
+          <div class="numero-paso">5</div>
+          <div>
+            <h4>Seguimiento post-adopción</h4>
+            <p>Te acompañamos los primeros meses para asegurarnos de que todo vaya bien.</p>
+          </div>
+        </div>
+      </div>
+      <div class="columna-adoptar">
+        <picture><img src="src/cachorros.webp" alt="Cachorros esperando adopción"></picture>
+      </div>
+    </div>
+
+    <h3 class="subtitulo-casos">Animales disponibles</h3>
+    <div class="flex-animales">
+      <div class="tarjeta-animal">
+        <picture><img src="src/perros.png" alt="Cachorros disponibles"></picture>
+        <div class="info-animal">
+          <h3>Familia de cachorros</h3>
+          <p>6 meses · Mixtos · Buenos Aires</p>
+          <div class="etiquetas-animal">
+            <span class="etiqueta-animal">Juguetones</span>
+            <span class="etiqueta-animal">Obedientes</span>
+            <span class="etiqueta-animal">Vacunados</span>
+          </div>
+          <a href="#contacto" class="boton-chico">Quiero adoptar</a>
+        </div>
+      </div>
+      <div class="tarjeta-animal">
+        <picture><img src="src/gato-3años.png" alt="Gato adulto disponible" ></picture>
+        <div class="info-animal">
+          <h3>Michi adulto</h3>
+          <p>3 años · Gato atigrado · Córdoba</p>
+          <div class="etiquetas-animal">
+            <span class="etiqueta-animal">Tranquilo</span>
+            <span class="etiqueta-animal">Amoroso</span>
+            <span class="etiqueta-animal">Castrado</span>
+          </div>
+          <a href="#contacto" class="boton-chico">Quiero adoptar</a>
+        </div>
+      </div>
+      <div class="tarjeta-animal">
+        <picture><img src="src/tita.png" alt="Perro adulto disponible" ></picture>
+        <div class="info-animal">
+          <h3>Tita</h3>
+          <p>2 años · Perra mediana · Rosario</p>
+          <div class="etiquetas-animal">
+            <span class="etiqueta-animal">Energética</span>
+            <span class="etiqueta-animal">Cariñosa</span>
+            <span class="etiqueta-animal">Castrada</span>
+          </div>
+          <a href="#contacto" class="boton-chico">Quiero adoptar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="interior-seccion">
+    <h2 class="titulo-seccion">Contacto</h2>
+    <p class="subtitulo-seccion">¿Querés adoptar, donar, reportar un caso o sumarte como voluntario? <br>Dejanos tus datos de contacto o escribinos!</p>
+
+    <div class="flex-contacto">
+
+      <div class="columna-contacto">
+        <form class="formulario-contacto" action="#" method="post">
+          <div class="fila-form">
+            <div class="campo-form">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="campo-form">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+            </div>
+          </div>
+
+            <div class="campo-form">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="campo-form">
+              <label for="ubicacion">¿Dónde vivís?</label>
+              <input type="text" id="ubicacion" name="ubicacion" placeholder="Tu ciudad" required>
+            </div>
+
+            <div class="campo-form">
+              <label for="telefono">Número de teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 0000-0000">
+            </div>
+
+            <div class="campo-form">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Dejanos tu consulta o mensaje acá..." required></textarea>
+            </div>
+
+            <button type="submit" class="boton-form">Enviar mensaje 🐾</button>
+      </form>
+    </div>
+
+    <div class="columna-contacto">
+      <h3>Encontranos en</h3>
+      <ul class="links-contacto">
+        <li><a rel="noopener" href="mailto:info@fundacionhuellaargentina.org" target="_blank">
+          <span class="icono-contacto">📧</span> info@fundacionhuellaargentina.org
+        </a></li>
+        <li><a rel="noopener" href="https://instagram.com/fundacionhuellaargentina" target="_blank">
+          <span class="icono-contacto">📸</span> @huellaargentina
+        </a></li>
+        <li><a rel="noopener" href="https://facebook.com/fundacionhuellaargentina" target="_blank">
+          <span class="icono-contacto">👍</span> /huellaargentina
+        </a></li>
+        <li><a rel="noopener" href="https://wa.me/5491123456789" target="_blank">
+          <span class="icono-contacto">💬</span> WhatsApp +54 9 11 2345-6789
+        </a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<footer>
+  <a href="#portada">
+    <picture><img src="src/logo.png" alt="Logo Huella Argentina" width="100px"></picture>
+  </a>
+  <p style="font-size: 1.3rem;"><strong>Fundación Huella Argentina</strong></p>
+  <p style="margin-top: 6px;">Huellas que transforman vidas · Organización No Gubernamental</p>
+  <ul class="links-footer">
+    <li><a href="#portada">Home</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#casos">Casos</a></li>
+    <li><a href="#adoptar">Adoptar</a></li>
+    <li><a href="donar.html#donar">Donar</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <p style="margin-top: 14px; font-size: 0.78rem;">© 2026 Fundación Huella Argentina · Hecho con ❤️ por Felipe Larrañaga</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

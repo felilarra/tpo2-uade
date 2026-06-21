@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Trykker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body: SELECTOR DE TIPO */
+body {
+    background-color: #000814;
+    color: white;
+    font-family: "Trykker", sans-serif;
+    text-align: center;
+    background-image: url(src/fondo.png);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003566;
+    text-align: right;
+    font-size: 14px;
+    font-family: "Mulish", sans-serif;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #111;
+    color: #ffd60a;
+}
+
+#menu {
+    margin-bottom: 25px;
+}
+
+#body_trivia #menu {
+    margin: 0;
+}
+
+/* #seccion1: SELECTOR DE ID */
+#seccion1 {
+    height: fit-content;
+}
+
+h1 {
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#bienvenida {
+    font-size: 22px;
+}
+
+#foto {
+    width: 320px;
+}
+
+/* .gold: SELECTOR DE CLASE */
+#frase {
+    color: #ffd60a;
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+}
+
+p {
+    color: #ffc300;
+}
+
+#seccion2 {
+    margin-top: 50px;
+}
+
+#seccion2 h2 {
+    font-family: "Mulish", sans-serif;
+}
+
+#imagenes img {
+    display: inline;
+    width: 70px;
+}
+
+/* about.html */
+#historia {
+    float: left;
+}
+
+#historia div {
+    text-align: left;
+    width: 75%;
+    float: left;
+}
+
+#historia p {
+    font-size: 18px;
+}
+
+#historia img {
+    width: 20%;
+    float: right;
+    border-radius: 5px;
+}
+
+#historia,
+#experiencia_laboral {
+    background-color: #001d3d;
+    margin: 2% 10%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#experiencia_laboral {
+    float: right;
+    text-align: left;
+}
+
+#experiencia_laboral ul {
+    font-size: 18px;
+}
+
+#historia h2,
+#historia p,
+#experiencia_laboral h2,
+#experiencia_laboral h4,
+#experiencia_laboral ul {
+    margin: 10px;
+}
+
+#historia h2 {
+    margin-bottom: 20px;
+}
+
+.periodo {
+    font-size: 20px;
+}
+
+.empresa {
+    font-size: 24px;
+}
+
+#experiencia_laboral h2 {
+    margin-bottom: 20px;
+}
+
+#experiencia_laboral .texto {
+    float: left;
+    width: 85%;
+    margin-left: 10px;
+
+}
+
+#experiencia_laboral ul li {
+    font-size: 20px;
+    color: #ffc300;
+    margin-left: 2%;
+}
+
+#img_farmacia,
+#img_feedback {
+    float: right;
+    width: 12%;
+    margin-top: 50px;
+
+}
+
+.bloque {
+    margin-bottom: 40px;
+}
+
+#div_tabla {
+    height: 489px;
+}
+
+#tabla_materias {
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 3px dashed white;
+    width: 90%;
+}
+
+#tabla_materias th,
+#tabla_materias td {
+    border: 1px solid #ffc300;
+    padding: 10px;
+}
+
+#tabla_materias th {
+    background-color: #003566;
+    font-family: "Mulish", sans-serif;
+}
+
+#tabla_materias td {
+    background-color: #001d3d;
+}
+
+/* Estilos para trivia */
+.body_preguntas {
+    background-color: #000814;
+    color: white;
+    font-family: "Trykker", sans-serif;
+    text-align: center;
+    background-image: url(src/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.h1preguntas {
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.opcion {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    padding: 30px 15px 15px 15px;
+    background-color: #003566;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+}
+
+.opcion:hover {
+    background-color: #ffd60a;
+    color: #000814;
+}
+
+.opcion img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ffc300;
+    object-fit: cover;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #ffd60a;
+    color: #003566;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+}
+
+.boton:hover {
+    background-color: #ffc300;
+}
+
+#body_tabla {
+    background-image: url("src/monserrat.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#h1trivia {
+    color: #ffd60a;
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#bombonera {
+    margin: 30px 0;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#jugar {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    background-color: #ffd60a;
+    color: #003566;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Mulish", sans-serif;
+    margin-top: 30px;
+}
+
+#jugar:hover {
+    background-color: #ffc300;
+}
+
+#h2trivia {
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.body_preguntas h2 {
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.correcta_p,
+.incorrecta_p {
+    font-size: 16px;
+    color: #ffd60a;
+    margin-bottom: 30px;
+}
+
+.h1preguntas {
+    margin-top: 50px;
+    font-size: 3em;
+    color: #ffd60a;
+}
+
+.correcta,
+.incorrecta {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.correcta {
+    color: #00ff00;
+}
+
+.incorrecta {
+    color: #ff0000;
+
+}
+
+/* video.html */
+.aside,
+#main {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.aside {
+    display: inline-block;
+    list-style-type: none;
+    width: 25%;
+    background-color: #003566;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 110px;
+}
+
+.aside li {
+    padding-top: 30px;
+
+}
+
+.aside li a {
+    color: #ffd60a;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.aside li a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#main {
+    width: 70%;
+}
+
+#main p {
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#main h1 {
+    color: #ffd60a;
+}
+
+#tv_bostera {
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 560px;
+    height: 315px;
+}
+
+#main iframe {
+    margin-top: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#tv_bostera,
+iframe {
+    margin-bottom: 17vh;
+}
+
+/* footer */
+footer {
+    clear: both;
+    background-color: #003566;
+    color: #fff;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    height: 30px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#footer_trivia {
+    margin-top: 21.3vh;
+}
