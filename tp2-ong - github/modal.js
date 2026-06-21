@@ -99,6 +99,7 @@ function openModal() {
     // Cada vez que se abre, nos aseguramos de mostrar el form y esconder el mensaje de éxito
     document.getElementById('contenidoFormulario').style.display = 'block';
     document.getElementById('contenidoExito').style.display = 'none';
+    document.body.style.overflow = 'hidden'; // bloquea scroll al tener el modal abierto
     
     // Se restablecen los campos del formulario para que queden vacíos
     document.getElementById('formDonar').reset();
