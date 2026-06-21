@@ -42,7 +42,7 @@ modalOverlay.innerHTML = `
             <p id="descripcionMonto" class="descripcion-monto"></p>
         </div>
 
-        <button type="submit" class="submit-btn">
+        <button type="submit" class="submit-btn" style="font-family: 'DM Sans', sans-serif;">
             Donar ahora
         </button>
     </form>
