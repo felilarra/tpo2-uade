@@ -35,6 +35,7 @@ modalOverlay.innerHTML = `
             <div class="form-group">
                 <label>Monto a donar</label>
                 <select id="selectMonto" required>
+                    <option value="" disabled selected>Elegí un monto</option>
                     <option value="2000">$2.000</option>
                     <option value="5000">$5.000</option>
                     <option value="15000">$15.000</option>
@@ -115,7 +116,6 @@ function openModal() {
 function closeModal() {
     modalOverlay.classList.remove('active');
     document.body.style.overflow = ''; // permite scroll al tener el modal cerrado
-
 }
 
 // =====================================
