@@ -114,6 +114,8 @@ function openModal() {
 
 function closeModal() {
     modalOverlay.classList.remove('active');
+    document.body.style.overflow = ''; // permite scroll al tener el modal cerrado
+
 }
 
 // =====================================
